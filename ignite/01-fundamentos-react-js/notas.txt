@@ -1,0 +1,46 @@
+# para criar o projeto com vite
+npm create vite@latest
+
+# limpeza do projeto template
+retirar da pasta src os arquivos .css e .svg
+abrir o main.jsx e retirar os imports
+abrir o app.jsx e remover todo o conteúdo dentro do return
+
+# conceito de componentes no react
+desacoplar pedaços da interface que se repetem várias vezes inclusive com informações diferentes
+
+# jsx - javascript + xml
+
+# o que é um componente
+uma função javascript que retorna HTML
+
+# default export
+function Post() {
+    return(
+        <p>Post</p>
+    )
+}
+
+export default Post
+
+# named exports
+export function Post() {
+    return(
+        <p>Post</p>
+    )
+}
+
+* nesse caso vc precisa importar usando {}
+import { Post } from "./Post"
+
+# conceito propriedades (atributos de um componente)
+informações que a gente pode passar para nossos componentes
+
+# css modules
+arquivo css que fica atrelado ao componente utiliza Nome.module.css
+
+# padrao de unidade relativa para fontes
+1rem = 16px
+
+# como pensar a montagem do componente
+- html, estilização e funcionamento
