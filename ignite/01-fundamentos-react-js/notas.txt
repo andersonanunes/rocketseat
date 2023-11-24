@@ -44,3 +44,7 @@ arquivo css que fica atrelado ao componente utiliza Nome.module.css
 
 # como pensar a montagem do componente
 - html, estilização e funcionamento
+
+# em que momento eu crio um componente
+- quando muitos elementos se repetem com mesmas caracteristicas (visual, comportamento, etc)
+- quando vc consegue tirar algo de um componente maior sem mudar sua funcionalidade
