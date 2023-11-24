@@ -48,3 +48,9 @@ arquivo css que fica atrelado ao componente utiliza Nome.module.css
 # em que momento eu crio um componente
 - quando muitos elementos se repetem com mesmas caracteristicas (visual, comportamento, etc)
 - quando vc consegue tirar algo de um componente maior sem mudar sua funcionalidade
+
+# desestruturar props
+consegue extrair valores de um objeto
+const user = { name: Anderson }
+pra recuperar o valor do nome de dentro do objeto vc usa:
+const { name } = user
