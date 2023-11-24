@@ -54,3 +54,6 @@ consegue extrair valores de um objeto
 const user = { name: Anderson }
 pra recuperar o valor do nome de dentro do objeto vc usa:
 const { name } = user
+
+# diferença entre forEach e map
+o .forEach não possui retorno enquanto que o .map possui retorno

@@ -2,15 +2,15 @@ import { Avatar } from './Avatar';
 import { Comment } from './Comment';
 import styles from './Post.module.css';
 
-export function Post(props) {
+export function Post({ author, publishedAt, content }) {
     return(
         <article className={ styles.post }>
             <header>
                 <div className={ styles.author }>
-                    <Avatar src='https://github.com/leandroanunes.png' />
+                    <Avatar src={author.avatarUrl} />
                     <div className={ styles.authorInfo }>
-                        <strong>Anderson Nunes</strong>
-                        <span>QA Software Engineer</span>
+                        <strong>{author.name}</strong>
+                        <span>{author.role}</span>
                     </div>
                 </div>
                 <time title='23 novembro às 19:15' dateTime='2023-11-23'>Publicado há 1h</time>
