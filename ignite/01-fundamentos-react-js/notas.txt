@@ -57,3 +57,22 @@ const { name } = user
 
 # diferença entre forEach e map
 o .forEach não possui retorno enquanto que o .map possui retorno
+
+# conceito de estado no react
+- variaveis que eu quero que o componente monitore e quando mude o react mostre o resultado atualizado
+
+# porque a key no react é unica?
+existem 3 momentos em que um componente é renderizado novamente no react
+- quando altera o estado
+- quando altera a propriedade
+- quando um componente pai é renderizado novamente
+
+# todos eventos de botão (onClick, onSubmit, etc) precisam receber como valor uma função e nunca a execução de uma função.
+função: onClick(handleAlgumaCoisa)
+execução da função: onClick(setLikeCount(likeCount + 1);)
+
+# closures
+sempre que vc for atualizar uma informação e ela depende do valor anterior faça usando uma função.
+setLikeCount((state) => {
+    return state + 1;
+});

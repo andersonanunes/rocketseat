@@ -8,7 +8,6 @@ import { Post } from "./components/Post"
 // author: { avatarUrl: "", name: "", role: "" }
 // publishedAt: Date
 // content: String
-
 // aqui simula o recebimento dos dados vindos do backend
 const posts = [
   {
@@ -51,7 +50,8 @@ export function App() {
         <main>
           { posts.map(post => {
             return(
-              <Post 
+              <Post
+                key={post.id}
                 author={post.author}
                 content={post.content}
                 publishedAt={post.publishedAt}
